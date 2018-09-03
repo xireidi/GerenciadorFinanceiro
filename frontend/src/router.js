@@ -31,11 +31,5 @@ export default new Router({
       name: 'saida', 
       component: () => import('./views/Saidas.vue')
     },
-    {
-      path: '/botao',
-      name: 'botao', 
-      component: () => import('./views/Botao.vue')
-    },
-
   ]
 })
