@@ -6,7 +6,7 @@
       <router-link to="/lancamentos">Lançamentos</router-link> | 
       <router-link to="/entrada">Entradas</router-link> | 
       <router-link to="/saida">Saídas</router-link> | 
-      <router-link to="/botao">Alerta</router-link> 
+      
 
       
     </div>
