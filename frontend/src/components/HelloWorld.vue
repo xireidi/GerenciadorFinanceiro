@@ -1,8 +1,14 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <div>
+      <input id="caixaAlerta" type='text'/><br><br>
+    </div>
     <div class='alertaBotao'>
-      <button id='botao' v-on:click='exibirAlerta'>Alerta</button>
+      <button id='botao' v-on:click='exibirInput'>Você escreveu:</button>
+      <br><br>
+      <button id='botao2' v-on:click='exibirAlerta'>Alerta</button>
+      
     </div>
     <p>
       For guide and recipes on how to configure / customize this project,<br>
@@ -43,11 +49,15 @@ export default {
   
      methods: {
       exibirAlerta(){
-       alert ("Fui clicado");
-       
+       alert ('Fui clicado!');
+      },
+     
+      exibirInput(){
+        alert (caixaAlerta.value);
       }
     }
        }
+       
 
        
 
@@ -69,10 +79,18 @@ li {
 a {
   color: #42b983;
 }
-button{
+#botao2{
     font-size: 15px;
     color:rgb(112, 207, 144);
     width:75px;
+    height:25 px;
+    background-color: #0f8a4c ;
+    border-radius: 30px 30px 30px 30px;
+    }
+#botao{
+    font-size: 15px;
+    color:rgb(112, 207, 144);
+    width:150px;
     height:25 px;
     background-color: #0f8a4c ;
     border-radius: 30px 30px 30px 30px;
