@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <div class='alertaBotao'>
-      <button id='botao' v-on:click= 'exibirAlerta()' >Alerta</button>
+      <button id='botao' v-on:click='exibirAlerta'>Alerta</button>
     </div>
     <p>
       For guide and recipes on how to configure / customize this project,<br>
@@ -39,13 +39,17 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String,
-
-     methods:
-      function exibirAlerta(){
-        return  alert ("Fui clicado");
+},
+  
+     methods: {
+      exibirAlerta(){
+       alert ("Fui clicado");
+       
+      }
+    }
        }
-  }
-}
+
+       
 
 </script>
 
@@ -65,4 +69,13 @@ li {
 a {
   color: #42b983;
 }
+button{
+    font-size: 15px;
+    color:rgb(112, 207, 144);
+    width:75px;
+    height:25 px;
+    background-color: #0f8a4c ;
+    border-radius: 30px 30px 30px 30px;
+    }
+
 </style>

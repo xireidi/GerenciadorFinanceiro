@@ -5,10 +5,7 @@
       <router-link to="/about">About</router-link> | 
       <router-link to="/lancamentos">Lançamentos</router-link> | 
       <router-link to="/entrada">Entradas</router-link> | 
-      <router-link to="/saida">Saídas</router-link> | 
-      
-
-      
+      <router-link to="/saida">Saídas</router-link> |
     </div>
     <router-view/>
   </div>
